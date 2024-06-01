@@ -1,21 +1,22 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Banner from './components/Banner'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import LiveAuction from './components/LiveAuction'
-import UpcomingAuction from './components/UpcomingAuction'
+import Hompage from './pages/Homepage/Hompage'
+import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
+
 
 function App() {
   
 
   return (
     <>
-     <Header/>
-     <Banner/>
-     <LiveAuction/>
-     <UpcomingAuction/>
-     <Footer/>
+    <Routes>
+      <Route path='/' element={<Hompage/>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/register' element={<Register/>}></Route>
+    </Routes>
+   
     </>
   )
 }

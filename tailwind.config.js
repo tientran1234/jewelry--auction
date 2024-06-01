@@ -21,6 +21,9 @@ module.exports = {
         custom:"30% 20% 20% 30%"
       },
       colors: {
+        red:"#dc2626",
+        blue:"#0284c7",
+        green:"#22c55e",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
